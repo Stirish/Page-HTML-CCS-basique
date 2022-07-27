@@ -1,0 +1,581 @@
+/*-----------------------------Rendu Ordinateur-----------------------------*/
+
+/*-----------------Réglage générales-----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: "raleway", "sans-serif";
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+body{
+  padding: 0px 32px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/*-----------------Réglage header-----------------*/
+
+.navBar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navLinks{
+  display: flex;
+}
+
+.navLink{
+  padding: 32px;
+  border-top: 3px solid transparent;
+}
+
+.navLink:hover{
+  border-top-color: #0065FC;
+  color: #0065FC;
+}
+
+/*-----------------Section search-----------------*/
+
+.mainTitle{
+  margin-bottom: 8px;
+}
+
+.searchDescription{
+  margin: 0px 0px 16px;
+}
+
+.searchForm{
+  display: inline-flex;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+
+.positionIcon{
+  background-color: #F2F2F2;
+  padding: 16px 20px;
+  border-radius: 16px 0px 0px 16px;
+  text-align: center;
+}
+
+.searchInput{
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 0px 24px;
+  width: 224px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: auto;
+}
+
+.searchInput::placeholder{
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.searchButton{
+  background-color: #0065FC;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px 16px 16px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.searchButton:hover{
+  background-color: #0080FC;
+}
+
+.searchButtonIcon{
+  display: none;
+}
+
+.searchFilter{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.searchFilterTitle{
+  display: flex;
+  align-items: center;
+  margin: 0px 32px 16px 0px;
+}
+
+.allFilterBox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchFilterBox{
+  display: flex;
+  align-items: center;
+  border: 2px solid #D9D9D9;
+  border-radius: 32px;
+  margin-right: 32px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.searchFilterIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  min-width: 56px;
+  min-height: 56px;
+  margin: -2px;
+  
+}
+.filterIcon{
+  color: #0065FC;
+}
+
+.searchFilterText{
+  margin: 0px 16px;
+}
+
+.searchFilterBox:hover > .searchFilterIcon{
+  background-color: #0065FC;
+}
+
+.searchFilterBox:hover > .searchFilterIcon > .filterIcon{
+  color: #DEEBFF;
+}
+
+.searchFilterBox:hover > .searchFilterText{
+  color: #0065FC;
+}
+
+.searchInfo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.searchInfoIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border: 1px solid #D9D9D9;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.infoIcon{
+  color: #0065FC;
+}
+
+/*-----------------Section hébergement-----------------*/
+
+.hosting{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.hostingCity{
+  background-color: #F2F2F2;
+  flex-basis: 66%;
+  padding: 32px;
+  border-radius: 24px; 
+}
+
+.hostingTitle{
+  margin: 0px 0px 32px 0px;
+}
+
+.hostingCityAllBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.hostingCityBox{
+  flex-grow: 1;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 16px #0000002e;
+}
+
+.hostingCityBoxImg{
+  width: 100%;
+  height: 112px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px ;
+}
+
+.hostingCityBoxTitle{
+  margin: 4px 12px 0px 12px;
+}
+
+.hostingCityBoxDescription{
+  margin: 4px 12px 4px 12px;
+}
+
+.hostingCityIcon{
+  margin: 0px 12px 4px 12px;
+}
+
+.hostingCityText{
+  font-weight: bold;
+}
+
+.hostingPopular{
+  background-color: #F2F2F2;
+  flex-basis: 33%;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.hostingPopularTitle{
+  margin: 0px 0px 32px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hostingPopularAllBox{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hostingPopularBox{
+  display: flex;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 16px #0000002e;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.hostingPopularBoxImg{
+  border-radius: 16px 0px 0px 16px;
+}
+
+.hostingPopularBoxInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.hostingPopularBoxInfoTitle{
+margin: 4px 12px 0px 12px;
+}
+
+.hostingPopularBoxInfoDescription{
+  margin: 4px 12px 4px 12px;
+}
+
+.hostingPopularBoxInfoSpace{
+flex: 1;
+}
+
+.hostingPopularIcon{
+margin: 0px 12px 4px 12px;
+}
+
+.cityIconFull{
+  color: #0065FC;
+}
+
+.cityIconEmpty{
+  color: #D9D9D9;
+}
+
+/*-----------------Section hébergement-----------------*/
+
+.activity{
+   margin-bottom: 64px;
+}
+
+.activityAllBox{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.activityBox{
+  box-shadow: 0px 0px 16px #0000002e;
+  border-radius: 16px;
+  
+}
+
+.activityBoxImg{
+  border-radius: 16px 16px 0px 0px;
+}
+
+.activityBoxTitle{
+  margin: 19px 24px;
+}
+
+.activityAllBoxColumn{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/*-----------------footer-----------------*/
+
+footer{
+  background-color: #F2F2F2;
+  width: 100%;
+}
+
+.footerAllBox{
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  padding: 0px 32px;
+}
+
+.footerBox{
+  flex-basis: 33%;
+  padding: 32px;
+}
+
+.footerBoxLink{
+  display: block;
+  margin: 16px 0px;
+}
+
+
+/*-----------------------------Rendu Tablette-----------------------------*/
+
+@media (min-width: 767px) and (max-width: 992px) {
+
+  /*-----------------Réglage header-----------------*/
+
+  .navBar{
+    justify-content: center;  
+  }
+  
+  .navLinks{
+    flex-basis: 100%;
+  }
+
+  .navLink{
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  .navLink:hover{
+    border-top-color: transparent;
+    border-bottom-color: #0065fc;
+  }
+
+  /*-----------------Section search-----------------*/
+  .mainTitle{
+    text-align: center;
+  }
+  .searchDescription{
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .searchFormBox{
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchButton{
+    border-radius: 16px;
+    padding: 0px 17px;
+  }
+
+  .searchButtonText{
+    display: none;
+  }
+
+  .searchButtonIcon{
+    display: block;
+  }
+
+  .allFilterBox{
+    flex-wrap: nowrap;
+  }
+
+  .searchFilterBox{
+    flex-basis: 20%;
+    margin-right: 25px;
+  }
+
+  /*-----------------Section hébergement-----------------*/
+  .hosting {
+    flex-direction: column;
+  }
+
+  .hostingPopular{
+    order: -1;
+  }
+  /*-----------------Section activité-----------------*/
+
+  .activityAllBox{
+    justify-content: center;
+  }
+
+  .activityTitle{
+    padding-left: 40px;
+  }
+  /*-----------------footer-----------------*/
+
+}
+
+/*-----------------------------Rendu Mobile-----------------------------*/
+
+@media (max-width: 767px) {
+
+  /*-----------------Réglage générales-----------------*/
+
+  body{
+    padding: 0px 0px;
+  }
+
+  /*-----------------Réglage header-----------------*/
+
+  .navBar{
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .navLogo{
+    margin-top: 15px;
+  }
+
+  .navLinks{
+    flex-basis: 100%;
+  }
+
+  .navLink{
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+  }
+  
+  .navLink:hover{
+    border-top-color: transparent;
+    border-bottom-color: #0065fc;
+  }
+
+  /*-----------------Section search-----------------*/
+  
+  .search{
+    padding: 0px 16px;
+  }
+  
+  .mainTitle{
+    font-size: 24px;
+  }
+
+  .searchDescription{
+    margin-bottom: 35px;
+  }
+
+  .searchFormBox{
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchButton{
+    border-radius: 16px;
+    padding: 0px 17px;
+  }
+
+  .searchButtonText{
+    display: none;
+  }
+
+  .searchButtonIcon{
+    display: block;
+  }
+
+  .searchFilterBox{
+    margin-right: 12px;
+  }
+
+  /*-----------------Section hébergement-----------------*/
+
+  .hosting {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  .hostingCity{
+    background-color: #FFFFFF;
+    border-radius: 0px;
+    padding: 32px 16px;
+  }
+
+  .hostingCityIcon{
+    display: flex;
+  }
+
+  .hostingPopular{
+    order: -1;
+  }
+
+  .hostingPopularIcon{
+    display: flex;
+  }
+
+  /*-----------------Section activité-----------------*/
+
+  .activity{
+    padding: 32px 16px;
+  }
+
+  .activityTitle{
+    padding-left: 0px;
+  }
+  
+  .activityAllBox{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .activityBox{
+    flex-grow: 1;
+  }
+
+  .activityBoxImg{
+    width: 100%;
+    height: 112px;
+    object-fit: cover;
+  }
+
+  /*-----------------footer-----------------*/
+
+  .footerAllBox{
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  .footerBox{
+    padding: 0px;;
+  }
+}

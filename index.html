@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/3302364883.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Bookie</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <img class="navLogo" src="./assets/logo/Booki3x.png" alt="logo booki">
+            <div class="navLinks">
+                <a class="navLink" href="#hostingCity">Hébergements</a>
+                <a class="navLink" href="#activity">Activités</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <h1 class="mainTitle">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p class="searchDescription">En plein centre ville ou en pleine nature</p>
+            <div class="searchFormBox">
+                <form class="searchForm" method="get" action="#">
+                    <label class="positionIcon" for="site-search"><i
+                            class="fas fa-map-marker-alt positionicon"></i></label>
+                    <input class="searchInput" type="search" placeholder="Marseille, France">
+                    <button class="searchButton">
+                        <span class="searchButtonText">Rechercher</span>
+                        <i class="fas fa-search searchButtonIcon"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="searchFilter">
+                <h2 class="searchFilterTitle">Filtres</h2>
+                <div class="allFilterBox">
+                    <div class="searchFilterBox">
+                        <div class="searchFilterIcon">
+                            <i class="fas fa-money-bill-wave filterIcon"></i>
+                        </div>
+                        <span class="searchFilterText">Économique</span>
+                    </div>
+                    <div class="searchFilterBox">
+                        <div class="searchFilterIcon">
+                            <i class="fas fa-child filterIcon"></i>
+                        </div>
+                        <span class="searchFilterText">Familial</span>
+                    </div>
+                    <div class="searchFilterBox">
+                        <div class="searchFilterIcon">
+                            <i class="fas fa-heart filterIcon"></i>
+                        </div>
+                        <span class="searchFilterText">Romantique</span>
+                    </div>
+                    <div class="searchFilterBox">
+                        <div class="searchFilterIcon">
+                            <i class="fas fa-dog filterIcon"></i>
+                        </div>
+                        <span class="searchFilterText">Animaux autorisés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="searchInfo">
+                <div class="searchInfoIcon">
+                    <i class="fas fa-info infoIcon"></i>
+                </div>
+                <span class="searchInfoText">Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+        </section>
+        <section class="hosting">
+            <div class="hostingCity" id="hostingCity">
+                <h2 class="hostingTitle">Hébergement à Marseille</h2>
+                <div class="hostingCityAllBox">
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/aubergedelacannebiere.jpg"
+                            alt="Auberge La Cannevière" />
+                        <h3 class="hostingCityBoxTitle">Auberge La Cannebière</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de <strong>25€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconEmpty"></i>
+                        </p>
+                    </a>
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/hotelduport.jpg"
+                            alt="Hôtel du port" />
+                        <h3 class="hostingCityBoxTitle">Hôtel du port</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de 52<strong>€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                        </p>
+                    </a>
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/hotellesmouettes.jpg"
+                            alt="Hôtel Les mouettes" />
+                        <h3 class="hostingCityBoxTitle">Hôtel Les mouettes</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de 76<strong>€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconEmpty"></i>
+                        </p>
+                    </a>
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/hoteldelamer.jpg"
+                            alt="Hôtel de la mer" />
+                        <h3 class="hostingCityBoxTitle">Hôtel de la mer</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de 46<strong>€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconEmpty"></i>
+                            <i class="fas fa-star cityIconEmpty"></i>
+                        </p>
+                    </a>
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/aubergelepanier.jpg"
+                            alt="Auberge Le Panier" />
+                        <h3 class="hostingCityBoxTitle">Auberge Le Panier</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de <strong>23€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconEmpty"></i>
+                        </p>
+                    </a>
+                    <a class="hostingCityBox" href="#">
+                        <img class="hostingCityBoxImg" src="./assets/hebergements/hotelchezamina.jpg"
+                            alt="Hôtel chez Amina" />
+                        <h3 class="hostingCityBoxTitle">Hôtel chez Amina</h3>
+                        <p class="hostingCityBoxDescription">Nuit à partir de 96<strong>€</strong></p>
+                        <p class="hostingCityIcon">
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                            <i class="fas fa-star cityIconFull"></i>
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="hostingCityText">Afficher plus</a>
+            </div>
+            <aside class="hostingPopular">
+                <h2 class="hostingPopularTitle">
+                    Les plus populaires
+                    <i class="fas fa-chart-line hostingPopularTitleIcon"></i>
+                </h2>
+                <div class="hostingPopularAllBox">
+                    <a class="hostingPopularBox" href="#">
+                        <img class="hostingPopularBoxImg" src="./assets/hebergements/hotellesoleildumatin.jpg"
+                            alt="Hôtel le soleil du matin">
+                        <div class="hostingPopularBoxInfo">
+                            <h3 class="hostingPopularBoxInfoTitle">Hôtel Le soleil du matin</h3>
+                            <p class="hostingPopularBoxInfoDescription">Nuit à partir de 128<strong>€</strong></p>
+                            <div class="hostingPopularBoxInfoSpace"></div>
+                            <p class="hostingPopularIcon">
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                            </p>
+                        </div>
+                    </a>
+                    <a class="hostingPopularBox" href="#">
+                        <img class="hostingPopularBoxImg" src="./assets/hebergements/aucoeurdeleauchambredhotes.jpg"
+                            alt="Au coeur de l'eau Chambre d'hôtes">
+                        <div class="hostingPopularBoxInfo">
+                            <h3 class="hostingPopularBoxInfoTitle">Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="hostingPopularBoxInfoDescription">Nuit à partir de 71<strong>€</strong></p>
+                            <div class="hostingPopularBoxInfoSpace"></div>
+                            <p class="hostingPopularIcon">
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconEmpty"></i>
+                            </p>
+                        </div>
+                    </a>
+                    <a class="hostingPopularBox" href="#">
+                        <img class="hostingPopularBoxImg" src="./assets/hebergements/hoteltoutbleuetblanc.jpg"
+                            alt="Hôtel Tout bleu et Blanc">
+                        <div class="hostingPopularBoxInfo">
+                            <h3 class="hostingPopularBoxInfoTitle">Hôtel Tout bleu et Blanc</h3>
+                            <p class="hostingPopularBoxInfoDescription">Nuit à partir de 68<strong>€</strong></p>
+                            <div class="hostingPopularBoxInfoSpace"></div>
+                            <p class="hostingPopularIcon">
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconFull"></i>
+                                <i class="fas fa-star cityIconEmpty"></i>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </section>
+        <section class="activity" id="activity">
+            <h2 class="activityTitle">Activités à Marseille</h2>
+            <div class="activityAllBox">
+                <a class="activityBox" href="#">
+                    <img class="activityBoxImg" src="./assets/activités/vieuxport.jpg" alt="Vieux Port">
+                    <h3 class="activityBoxTitle">Vieux Port</h3>
+                </a>
+                <div class="activityAllBoxColumn">
+                    <a class="activityBox" href="#">
+                        <img class="activityBoxImg" src="./assets/activités/fortpomegue.jpg" alt="Fort de Pomègues">
+                        <h3 class="activityBoxTitle">Fort de Pomègues</h3>
+                    </a>
+                    <a class="activityBox" href="#">
+                        <img class="activityBoxImg" src="./assets/activités/iledufrioul.jpg" alt="Île du Frioul">
+                        <h3 class="activityBoxTitle">Île du Frioul</h3>
+                    </a>
+                </div>
+                <a class="activityBox" href="#">
+                    <img class="activityBoxImg" src="./assets/activités/parcnationaldescalanques.jpg"
+                        alt="Parc National des Calanques">
+                    <h3 class="activityBoxTitle">Parc National des Calanques</h3>
+                </a>
+                <div class="activityAllBoxColumn">
+                    <a class="activityBox" href="#">
+                        <img class="activityBoxImg" src="./assets/activités/notredamedelagarde.jpg"
+                            alt="Notre-Dame-de-la-Garde">
+                        <h3 class="activityBoxTitle">Notre-Dame-de-la-Garde</h3>
+                    </a>
+                    <a class="activityBox" href="#">
+                        <img class="activityBoxImg" src="./assets/activités/parclongchamp.jpg" alt="Parc Longchamp">
+                        <h3 class="activityBoxTitle">Parc Longchamp</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerAllBox">
+            <div class="footerBox">
+                <h3 class="footerBoxTitle">A propos</h3>
+                <a class="footerBoxLink" href="#">Fonctionnement du site</a>
+                <a class="footerBoxLink" href="#">Conditions générales de vente</a>
+                <a class="footerBoxLink" href="#">Données et confidentialités</a>
+            </div>
+            <div class="footerBox">
+                <h3 class="footerBoxTitle">Nos hébergement</h3>
+                <a class="footerBoxLink" href="#">Charte qualité</a>
+                <a class="footerBoxLink" href="#">Soumettre votre hôtel</a>
+            </div>
+            <div class="footerBox">
+                <h3 class="footerBoxTitle">Assistance</h3>
+                <a class="footerBoxLink" href="#">Centre d'aide</a>
+                <a class="footerBoxLink" href="#">Nous contacter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
